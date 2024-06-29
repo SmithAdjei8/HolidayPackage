@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|f:\\smith stuff\\projects\\job technical test\\holidaypackage\\holidaypack\\holidaypack\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|solutionrelative:holidaypack\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|f:\\smith stuff\\projects\\job technical test\\holidaypackage\\holidaypack\\holidaypack\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|solutionrelative:holidaypack\\services\\searchservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|f:\\smith stuff\\projects\\job technical test\\holidaypackage\\holidaypack\\holidaypack\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|solutionrelative:holidaypack\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|f:\\smith stuff\\projects\\job technical test\\holidaypackage\\holidaypack\\holidaypack\\models\\srchvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|solutionrelative:holidaypack\\models\\srchvalues.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|f:\\smith stuff\\projects\\job technical test\\holidaypackage\\holidaypack\\holidaypack\\models\\srchresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50EF3257-59E9-41BD-9353-BB551020B171}|HolidayPack\\HolidayPack.csproj|solutionrelative:holidaypack\\models\\srchresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +35,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Class1.cs",
-              "RelativeDocumentMoniker": "HolidayPack\\Class1.cs",
-              "ToolTip": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Class1.cs",
-              "RelativeToolTip": "HolidayPack\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAUAAAA",
+              "Title": "SearchService.cs",
+              "DocumentMoniker": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Services\\SearchService.cs",
+              "RelativeDocumentMoniker": "HolidayPack\\Services\\SearchService.cs",
+              "ToolTip": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Services\\SearchService.cs",
+              "RelativeToolTip": "HolidayPack\\Services\\SearchService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-29T17:04:41.697Z",
+              "WhenOpened": "2024-06-29T18:27:48.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "HolidayPack\\Services\\DataService.cs",
+              "ToolTip": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Services\\DataService.cs",
+              "RelativeToolTip": "HolidayPack\\Services\\DataService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T18:25:14.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SrchValues.cs",
+              "DocumentMoniker": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Models\\SrchValues.cs",
+              "RelativeDocumentMoniker": "HolidayPack\\Models\\SrchValues.cs",
+              "ToolTip": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Models\\SrchValues.cs",
+              "RelativeToolTip": "HolidayPack\\Models\\SrchValues.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T18:20:43.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SrchResults.cs",
+              "DocumentMoniker": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Models\\SrchResults.cs",
+              "RelativeDocumentMoniker": "HolidayPack\\Models\\SrchResults.cs",
+              "ToolTip": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\Models\\SrchResults.cs",
+              "RelativeToolTip": "HolidayPack\\Models\\SrchResults.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T18:18:21.076Z",
               "EditorCaption": ""
             },
             {

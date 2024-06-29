@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Ni9Li3JJzcA=",
+  "dgSpecHash": "xmhRZ9einrs=",
   "success": true,
   "projectFilePath": "F:\\Smith Stuff\\Projects\\Job Technical Test\\HolidayPackage\\HolidayPack\\HolidayPack\\HolidayPack.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Nana Kwabena\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
