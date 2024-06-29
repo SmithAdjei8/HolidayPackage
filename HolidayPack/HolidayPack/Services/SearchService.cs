@@ -21,37 +21,62 @@ namespace HolidayPack.Services
 
 		public IEnumerable<SrchResults> Results(string jsonParams)
 		{
+			var matchedFlights = new List<Flight>();
+
+
 			var customerQuery = JsonConvert.DeserializeObject<SrchValues>(jsonParams);
 
-			//if (customerQuery == null)
-			//{
-			//	foreach(var param in customerQuery)
-			//	{
-			//		param1 = param.DepartingFrom;
-			//	}
-			//}
+			var londonAirports = new string[] { "LGW", "LTN" };
 
-			var matchedFlights = _flights
-				.Where(x => x.Departure_Date == customerQuery.DepartureDate && x.From == customerQuery.DepartingFrom && x.To == customerQuery.TravellingTo)
-				.ToList();
+			if (customerQuery != null)
+			{
+				if (customerQuery.DepartingFrom.ToUpper() == "ANY LONDON AIRPORT")
+				{
+					matchedFlights = _flights
+					.Where(x => x.Departure_Date == customerQuery.DepartureDate && londonAirports.Contains(x.From) && x.To == customerQuery.TravellingTo)
+					.OrderBy(x => x.Price)
+					.ToList();
+				}
+				else if (customerQuery.DepartingFrom.ToUpper() == "ANY AIRPORT")
+				{
+					matchedFlights = _flights
+					.Where(x => x.Departure_Date == customerQuery.DepartureDate && x.To == customerQuery.TravellingTo)
+					.OrderBy(x => x.Price)
+					.ToList();
+				}
+				else
+				{
+					matchedFlights = _flights
+					.Where(x => x.Departure_Date == customerQuery.DepartureDate && x.From == customerQuery.DepartingFrom && x.To == customerQuery.TravellingTo)
+					.OrderBy(x => x.Price)
+					.ToList();
+				}
 
-			var matchedHotels = _hotels
-				.Where(x => x.Local_Airports == customerQuery.TravellingTo && x.Arrival_Date <= customerQuery.DepartureDate && x.Nights >= customerQuery.Duration)
-				.ToList();
+				var selectedFlight = matchedFlights.Take(1);
 
-			var packagesAvailable = from flight in matchedFlights
-									from hotel in matchedHotels
-									let totalNightsPrice = hotel.Price_Per_Night * customerQuery.Duration
-									let totalPrice = flight.Price + totalNightsPrice
-									select new SrchResults
-									{
-										FlightFound = flight,
-										HotelFound = hotel,
-										TotalPrice = totalPrice,
-										TotNightsPrice = totalNightsPrice,
-									};
+				var matchedHotels = _hotels
+					.Where(x => x.Local_Airports == customerQuery.TravellingTo && x.Arrival_Date <= customerQuery.DepartureDate && x.Nights >= customerQuery.Duration)
+					.OrderBy(x => x.Nights)
+					.ToList()
+					.Take(1);
 
-			return packagesAvailable.OrderBy(p => p.TotalPrice).ToList();
+				var packagesAvailable = from flight in selectedFlight
+										from hotel in matchedHotels
+										let totalNightsPrice = hotel.Price_Per_Night * customerQuery.Duration
+										let totalPrice = flight.Price + totalNightsPrice
+										select new SrchResults
+										{
+											FlightFound = flight,
+											HotelFound = hotel,
+											TotalPrice = totalPrice,
+											TotNightsPrice = totalNightsPrice,
+										};
+
+				packagesAvailable = packagesAvailable.OrderBy(p => p.TotalPrice).ToList();
+				return packagesAvailable.Take(1);
+			}
+			else
+				return null;
 		}
 	}
 }
